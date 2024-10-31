@@ -57,9 +57,9 @@ public class Game {
 				if (l != null) {
 					System.out.println(l.getDesc());
 				} else {
-					for (l : inv) {
-						if (inv.equals(l)) {
-							System.out.println();
+					for (int c : inv) {
+						if (inv.equals(c)) {
+							System.out.println(l.getDesc());
 						} else {
 							System.out.println("I don't see that anywhere!");
 						}
