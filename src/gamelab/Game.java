@@ -11,8 +11,13 @@ public class Game {
 	
 	public static ArrayList<Item> inv = new ArrayList<Item>();
 	
+	public static Room currentRoom = World.buildWorld();
+			
+	public static void print(Object obj) {
+		System.out.println(obj.toString());
+	}
+	
 	public static void runGame() {
-		Room currentRoom = World.buildWorld();
 
 		Scanner input = new Scanner(System.in);
 		
@@ -57,9 +62,10 @@ public class Game {
 				if (l != null) {
 					System.out.println(l.getDesc());
 				} else {
-					for (int c : inv) {
-						if (inv.equals(c)) {
-							System.out.println(l.getDesc());
+					for (Item c : inv) {
+						if (words[1].equals(c.getName())) {
+							System.out.println(c.getDesc());
+							break;
 						} else {
 							System.out.println("I don't see that anywhere!");
 						}
