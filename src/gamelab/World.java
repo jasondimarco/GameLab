@@ -22,7 +22,12 @@ public class World {
 		cavern.addExit(camp, 'n');
 		
 		cavern.addExit(crawl, 's');	
+		
+		Safe safe = new Safe("Safe", "It's an impressive safe!");
+		cavern.setItem(safe);
 
+		Combination combination = new Combination("Combination", "Actually very simple combination.");
+		cavern.setItem(combination);
 		
 		camp.addExit(cavern, 's');
 		

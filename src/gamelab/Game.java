@@ -72,6 +72,14 @@ public class Game {
 					}
 				}
 				break;
+			case "use":
+				for (Item u : inv) {
+					if (words[1].equals(u.getName())) {
+						u.use();
+						break;
+					}
+				}
+				break;
 			default:
 				System.out.println("I don't know what you mean.");
 			}
