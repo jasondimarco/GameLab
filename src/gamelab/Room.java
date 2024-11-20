@@ -11,6 +11,24 @@ public class Room {
 	private Room up;
 	private Room down;
 	private String desc;
+	private boolean lock;
+	private String rname;
+	
+	public void setRname(String r) {
+		rname = r;
+	}
+	
+	public String getRname() {
+		return rname;
+	}
+	
+	public void setLock(boolean l) {
+		lock = l;
+	}
+	
+	public boolean getLock() {
+		return lock;
+	}
 	
 	HashMap<String, Item> item = new HashMap<>();
 	
