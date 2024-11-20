@@ -73,11 +73,25 @@ public class Game {
 				}
 				break;
 			case "use":
-				for (Item u : inv) {
-					if (words[1].equals(u.getName())) {
+				Item u = currentRoom.getItem(words[1]);
+				System.out.println("You want to use the " + words[1]);
+				for (Item se : inv) {
+					if (words[1].equals(se.getName())) {
+						se.use();
+						break;
+					} else {
 						u.use();
 						break;
 					}
+				}
+				break;
+			case "open":
+				Item o = currentRoom.getItem(words[1]); // checks for item in room
+				System.out.println("You want to open the " + words[1]);
+				if (o == null) {
+					System.out.println("Theres nothing here.");
+				} else {
+					o.open();
 				}
 				break;
 			default:

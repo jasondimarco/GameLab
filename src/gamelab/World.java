@@ -5,7 +5,7 @@ public class World {
 	// Returns the room the player starts in.
 	
 	public static Room buildWorld() {
-		Room cavern = new Room("Cavern, a massive cave opening with a bridge over chasm.");
+		Room cavern = new Room("Cavern, a massive cave opening with a bridge over a chasm.");
 		Room chamber = new Room("Chamber, a small dark cave pocket with a stream running through.");
 		Room camp = new Room("Camp, spacious cliff ledge with an old fire pit.");
 		Room hall = new Room("Hall, a long rocky corridor.");
