@@ -14,6 +14,11 @@ public class Room {
 	private boolean lock;
 	private String rname;
 	
+	public Room(String r, String de) {
+		desc = de;
+		rname = r;
+	}
+	
 	public void setRname(String r) {
 		rname = r;
 	}
@@ -26,7 +31,7 @@ public class Room {
 		lock = l;
 	}
 	
-	public boolean getLock() {
+	public Boolean getLock() {
 		return lock;
 	}
 	
@@ -45,9 +50,6 @@ public class Room {
 		item.remove(n);
 	}
 	
-	public Room(String de) {
-		desc = de;
-	}
 
 	public Room getExit(char c) {
 		if (c == 'e') {
