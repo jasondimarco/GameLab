@@ -48,7 +48,7 @@ public class World {
 		Item bone = new Item("Skeleton", "Remnents of what looks like the last person to reside at this camp.");
 		camp.setItem(bone);
 		
-		Item disc = new Item("Disc", "Small ancient stone disc with detailed symbols.");
+		Disc disc = new Disc("Disc", "Small ancient stone disc with detailed symbols.");
 		camp.setItem(disc);
 		
 		camp.setLock(false);
