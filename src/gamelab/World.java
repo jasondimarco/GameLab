@@ -42,7 +42,7 @@ public class World {
 		Item satchel = new Item("Satchel", "A rugged leather satchel, worn and scuffed.");
 		camp.setItem(satchel);
 		
-		Item key = new Item("Key", "A tarnished bronze key with a twisted stem and a handle shaped like a snake head.");
+		Key key = new Key("Key", "A tarnished bronze key with a twisted stem and a handle shaped like a snake head.");
 		camp.setItem(key);
 		
 		Item bone = new Item("Skeleton", "Remnents of what looks like the last person to reside at this camp.");
@@ -61,7 +61,7 @@ public class World {
 		
 		crawl.addExit(cavern, 'n');
 		
-		Item chest = new Item("Chest", "A wooden chest, reinforced with iron bands, sitting ominously in the corner");
+		Chest chest = new Chest("Chest", "A wooden chest, reinforced with iron bands, sitting ominously in the corner");
 		crawl.setItem(chest);
 		
 		crawl.setLock(false);
