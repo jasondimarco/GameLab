@@ -39,7 +39,7 @@ public class World {
 		
 		camp.addExit(cavern, 's');
 		
-		Item satchel = new Item("Satchel", "A rugged leather satchel, worn and scuffed.");
+		Satchel satchel = new Satchel("Satchel", "A rugged leather satchel, worn and scuffed.");
 		camp.setItem(satchel);
 		
 		Key key = new Key("Key", "A tarnished bronze key with a twisted stem and a handle shaped like a snake head.");
