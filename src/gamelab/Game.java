@@ -6,16 +6,22 @@ import java.util.Scanner;
 public class Game {
 	
 	public static void main(String[] args) {
-		runGame();
+		gamegui = new GameGUI();
+	}
+	
+	private static GameGUI gamegui;
+	
+	public static void print(Object obj) {
+		gamegui.texta.append(obj.toString()+"\n");
 	}
 	
 	public static ArrayList<Item> inv = new ArrayList<Item>();
 	
 	public static Room currentRoom = World.buildWorld();
 			
-	public static void print(Object obj) {
-		System.out.println(obj.toString());
-	}
+//	public static void print(Object obj) {
+//		System.out.println(obj.toString());
+//	}
 	
 	public static void runGame() {
 
