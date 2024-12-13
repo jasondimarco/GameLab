@@ -19,7 +19,7 @@ public class World {
 		
 		hall.addExit(ladder, 'n');
 		
-		hall.setLock(false);
+		hall.setLock(true);
 		
 		
 		cavern.addExit(hall, 'w');
@@ -34,7 +34,7 @@ public class World {
 		Combination combination = new Combination("Combination", "Actually very simple combination.");
 		cavern.setItem(combination);
 		
-		cavern.setLock(false);
+		cavern.setLock(true);
 		
 		
 		camp.addExit(cavern, 's');
@@ -51,12 +51,15 @@ public class World {
 		Disc disc = new Disc("Disc", "Small ancient stone disc with detailed symbols.");
 		camp.setItem(disc);
 		
-		camp.setLock(false);
+		camp.setLock(true);
 		
 		
 		chamber.addExit(hall, 'e');
 		
-		chamber.setLock(false);
+		NPC puppy = new NPC("puppy", "A hideous puppy wags his tail.");
+		chamber.setNPC(puppy);
+		
+		chamber.setLock(true);
 		
 		
 		crawl.addExit(cavern, 'n');
@@ -64,12 +67,12 @@ public class World {
 		Chest chest = new Chest("Chest", "A wooden chest, reinforced with iron bands, sitting ominously in the corner");
 		crawl.setItem(chest);
 		
-		crawl.setLock(false);
+		crawl.setLock(true);
 		
 		
 		ladder.addExit(hall, 's');
 		
-		ladder.setLock(true);
+		ladder.setLock(false);
 		
 		
 		return cavern;

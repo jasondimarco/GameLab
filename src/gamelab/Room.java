@@ -14,6 +14,17 @@ public class Room {
 	private boolean lock;
 	private String rname;
 	
+	HashMap<String, NPC> npc = new HashMap<>();
+	
+	public NPC getNPC(String n) {
+		return npc.get(n);
+	}
+
+	public void setNPC(NPC p) {
+		String n = p.getName();
+		npc.put(n, p);
+	}
+
 	public Room(String r, String de) {
 		desc = de;
 		rname = r;
